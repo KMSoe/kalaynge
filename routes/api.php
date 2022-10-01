@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\AlphabetController;
 use App\Http\Controllers\Api\CategoryController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -22,4 +23,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::prefix('/v1')->group(function () {
     // Categories
     Route::resource('/categories', CategoryController::class);
+
+    // Alphabets
+    Route::resource('/alphabets', AlphabetController::class);
 });

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Alphabet;
 use Illuminate\Http\Request;
 
 class AlphabetController extends Controller
@@ -14,7 +15,12 @@ class AlphabetController extends Controller
      */
     public function index()
     {
-        //
+        $alphabets = Alphabet::select('id', 'name', 'sorting', 'created_at')
+            ->orderBy('sorting')
+            ->orderBy('created_at')
+            ->paginate(10);
+
+        return $alphabets;
     }
 
     /**
@@ -36,7 +42,14 @@ class AlphabetController extends Controller
      */
     public function show($id)
     {
-        //
+        $item = Alphabet::findOrFail($id);
+
+        return response()->json([
+            'status' => true,
+            'data' => $item,
+            'previous' => route('alphabets.show', ['alphabet' => $item->previous]),
+            'next' => route('alphabets.show', ['alphabet' => $item->next]),
+        ], 200);
     }
 
     /**
