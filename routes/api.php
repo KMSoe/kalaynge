@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\AlphabetController;
 use App\Http\Controllers\Api\CategoryController;
+use App\Http\Controllers\Api\NumberController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -26,4 +27,7 @@ Route::prefix('/v1')->group(function () {
 
     // Alphabets
     Route::resource('/alphabets', AlphabetController::class);
+
+     // Numbers
+     Route::resource('/numbers', NumberController::class);
 });
