@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\Alphabet;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 
 class AlphabetController extends Controller
 {
@@ -31,7 +34,48 @@ class AlphabetController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validator = Validator::make(request()->all(), [
+            "symbol" => 'required',
+            "name" => 'required',
+            "sample_word" => 'required',
+            'picture' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                "status" => false,
+                "errors" => $validator->errors(),
+                'message' => 'Fill Input Data Correctly'
+            ], 400);
+        }
+
+        $alphabet = new Alphabet();
+        $alphabet->symbol = $request->symbol;
+        $alphabet->name = $request->name;
+        $alphabet->sample_word = $request->sample_word;
+
+        $image = $request->file('picture');
+
+        $extension = $image->getClientOriginalExtension();
+        $fileName  = $alphabet->name . '.' . $extension;
+
+        $destination = storage_path('app/public/alphabets');
+
+        if (File::exists($destination . '/' . $fileName)) {
+            Storage::delete($destination . '/' . $fileName);
+        }
+
+        $image->storeAs($destination, $fileName);
+
+        $alphabet->picture = $fileName;
+        $alphabet->save();
+
+        return response()->json([
+            "status" => true,
+            "messge" => 'Successfully added',
+            "id" => $alphabet->id,
+            "data" => $alphabet
+        ], 201);
     }
 
     /**
@@ -61,7 +105,52 @@ class AlphabetController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $alphabet = Alphabet::findOrFail($id);
+
+        $validator = Validator::make(request()->all(), [
+            "symbol" => 'required',
+            "name" => 'required',
+            "sample_word" => 'required',
+            'picture' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                "status" => false,
+                "errors" => $validator->errors(),
+                'message' => 'Fill Input Data Correctly'
+            ], 400);
+        }
+
+        $alphabet->symbol = $request->symbol;
+        $alphabet->name = $request->name;
+        $alphabet->sample_word = $request->sample_word;
+
+        $image = $request->file('picture');
+
+        if ($image) {
+            $extension = $image->getClientOriginalExtension();
+            $fileName  = $alphabet->name . '.' . $extension;
+
+            $destination = storage_path('app/public/alphabets');
+
+            if (File::exists($destination . '/' . $alphabet->picture)) {
+                Storage::delete($destination . '/' . $alphabet->picture);
+            }
+
+            $image->storeAs($destination, $fileName);
+
+            $alphabet->picture = $fileName;
+        }
+
+        $alphabet->save();
+
+        return response()->json([
+            "status" => true,
+            "messge" => 'Successfully updated',
+            "id" => $alphabet->id,
+            "data" => $alphabet
+        ], 200);
     }
 
     /**
@@ -72,6 +161,12 @@ class AlphabetController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $alphabet = Alphabet::findOrFail($id);
+
+        $countDeleted = $alphabet->delete();
+
+        if ($countDeleted) {
+            return response()->json([], 204);
+        }
     }
 }
