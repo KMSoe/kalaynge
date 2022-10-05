@@ -47,8 +47,8 @@ class AlphabetController extends Controller
         return response()->json([
             'status' => true,
             'data' => $item,
-            'previous' => route('alphabets.show', ['alphabet' => $item->previous]),
-            'next' => route('alphabets.show', ['alphabet' => $item->next]),
+            'previous' => $item->previous ? route('alphabets.show', ['alphabet' => $item->previous]) : null,
+            'next' => $item->next ? route('alphabets.show', ['alphabet' => $item->next]) : null,
         ], 200);
     }
 
