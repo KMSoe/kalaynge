@@ -47,8 +47,8 @@ class NumberController extends Controller
         return response()->json([
             'status' => true,
             'data' => $item,
-            'previous' => route('numbers.show', ['number' => $item->previous]),
-            'next' => route('numbers.show', ['number' => $item->next]),
+            'previous' => $item->previous ? route('numbers.show', ['number' => $item->previous]) : null,
+            'next' => $item->next ? route('numbers.show', ['number' => $item->next]) : null,
         ], 200);
     }
 
