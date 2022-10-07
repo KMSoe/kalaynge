@@ -53,6 +53,7 @@ class AlphabetController extends Controller
         $alphabet->symbol = $request->symbol;
         $alphabet->name = $request->name;
         $alphabet->sample_word = $request->sample_word;
+        $alphabet->category_id = 1;
 
         $image = $request->file('picture');
 
@@ -125,6 +126,7 @@ class AlphabetController extends Controller
         $alphabet->symbol = $request->symbol;
         $alphabet->name = $request->name;
         $alphabet->sample_word = $request->sample_word;
+        $alphabet->category_id = 1;
 
         $image = $request->file('picture');
 
