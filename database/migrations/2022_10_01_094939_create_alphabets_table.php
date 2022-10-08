@@ -19,6 +19,7 @@ class CreateAlphabetsTable extends Migration
             $table->string('name');
             $table->string('sample_word');
             $table->string('picture');
+            $table->text('description')->nullable();
             $table->string('audio')->nullable();
             $table->string('video')->nullable();
             $table->integer('sorting')->default(0);
