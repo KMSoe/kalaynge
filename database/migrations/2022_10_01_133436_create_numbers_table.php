@@ -18,6 +18,7 @@ class CreateNumbersTable extends Migration
             $table->string('symbol');
             $table->string('name');
             $table->string('picture');
+            $table->text('description')->nullable();
             $table->string('audio')->nullable();
             $table->string('video')->nullable();
             $table->integer('sorting')->default(0);
