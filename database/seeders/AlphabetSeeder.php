@@ -21,6 +21,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ကလေးငယ်",
                 "picture" => "kid.png",
                 "sorting" => 1,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -29,6 +30,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ခရာတံ",
                 "picture" => "khayar.png",
                 "sorting" => 2,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -37,6 +39,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ဂဏန်းသင်္ချာ",
                 "picture" => "numbers.png",
                 "sorting" => 3,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -45,6 +48,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "",
                 "picture" => "monk.png",
                 "sorting" => 4,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -53,6 +57,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ငရုပ်သီး",
                 "picture" => "chile.png",
                 "sorting" => 5,
+                "description" => "",
                 "category_id" => 1,
             ],
 
@@ -62,6 +67,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "စပျစ်သီး",
                 "picture" => "grape.png",
                 "sorting" => 6,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -70,6 +76,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ဆရာမ",
                 "picture" => "techal.png",
                 "sorting" => 7,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -78,6 +85,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ဇလုံလေး",
                 "picture" => "bowl.png",
                 "sorting" => 8,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -86,6 +94,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ဈေးသည်",
                 "picture" => "hawder.png",
                 "sorting" => 9,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -94,6 +103,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ညနေခင်း",
                 "picture" => "night.png",
                 "sorting" => 10,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -102,6 +112,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ဋီကာ",
                 "picture" => "disquisition.png",
                 "sorting" => 11,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -110,6 +121,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "သူဌေး",
                 "picture" => "boss.png",
                 "sorting" => 12,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -118,6 +130,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ဍရင်ကောက်",
                 "picture" => "dayinkout.png",
                 "sorting" => 13,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -126,6 +139,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ဎရေမှုတ်",
                 "picture" => "dayinhhmont.png",
                 "sorting" => 14,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -134,6 +148,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ဏကြီး",
                 "picture" => "nagyi.png",
                 "sorting" => 15,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -142,6 +157,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "တယောတံ",
                 "picture" => "violin.png",
                 "sorting" => 16,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -150,6 +166,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ထမင်းပန်းကန်",
                 "picture" => "rice_bowl.png",
                 "sorting" => 17,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -158,6 +175,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ဒရယ်လေး",
                 "picture" => "gazella.png",
                 "sorting" => 18,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -166,6 +184,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ဓနိပင်",
                 "picture" => "straw.png",
                 "sorting" => 19,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -174,6 +193,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "နဂါးလေး",
                 "picture" => "dragon.png",
                 "sorting" => 20,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -182,6 +202,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ပထမ",
                 "picture" => "first_prize.png",
                 "sorting" => 21,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -190,6 +211,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ဖရဲသီး",
                 "picture" => "watermelon.png",
                 "sorting" => 22,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -198,6 +220,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ဗလကြီး",
                 "picture" => "a.png",
                 "sorting" => 23,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -206,6 +229,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ဘဘကြီး",
                 "picture" => "granduncle.png",
                 "sorting" => 24,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -214,6 +238,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "မိကျောင်းကြီး",
                 "picture" => "crocodile.png",
                 "sorting" => 25,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -222,6 +247,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ယုန်ကလေး",
                 "picture" => "rabbit.png",
                 "sorting" => 26,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -230,6 +256,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ရထားကြီး",
                 "picture" => "train.png",
                 "sorting" => 27,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -238,6 +265,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "လမင်းကြီး",
                 "picture" => "moon.png",
                 "sorting" => 28,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -246,6 +274,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ဝက်ဝံလေး",
                 "picture" => "bear.png",
                 "sorting" => 29,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -254,6 +283,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "သမင်ငယ်",
                 "picture" => "deer.png",
                 "sorting" => 30,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -262,6 +292,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ဟရယ်လိုက်ရ",
                 "picture" => "comic.png",
                 "sorting" => 31,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -270,6 +301,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "ဠကြီး",
                 "picture" => "lagyi.png",
                 "sorting" => 32,
+                "description" => "",
                 "category_id" => 1,
             ],
             [
@@ -278,6 +310,7 @@ class AlphabetSeeder extends Seeder
                 "sample_word" => "အမိမြေ",
                 "picture" => "homeland.png",
                 "sorting" => 33,
+                "description" => "",
                 "category_id" => 1,
             ],
         ];
