@@ -30,6 +30,6 @@ class Alphabet extends Model
 
     public function getPictureAttribute($picture)
     {
-        return asset('storage/alphabets/' . $picture);
+        return asset('storage/alphabets/pictures/' . $picture);
     }
 }
