@@ -12,6 +12,6 @@ class Nature extends Model
 
     public function getPictureAttribute($picture)
     {
-        return asset('storage/natures/' . $picture);
+        return asset('storage/natures/pictures/' . $picture);
     }
 }
