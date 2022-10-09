@@ -32,6 +32,6 @@ class Number extends Model
 
     public function getPictureAttribute($picture)
     {
-        return asset('storage/numbers/' . $picture);
+        return asset('storage/numbers/pictures/' . $picture);
     }
 }
