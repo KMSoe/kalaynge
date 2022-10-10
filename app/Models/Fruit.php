@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Nature extends Model
+class Fruit extends Model
 {
     use HasFactory, SoftDeletes;
 
@@ -32,6 +32,7 @@ class Nature extends Model
 
     public function getPictureAttribute($picture)
     {
-        return asset('storage/natures/pictures/' . $picture);
+        return asset('storage/fruits/pictures/' . $picture);
     }
+
 }

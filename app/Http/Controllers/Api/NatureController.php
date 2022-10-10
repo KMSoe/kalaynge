@@ -47,9 +47,16 @@ class NatureController extends Controller
      * @param  \App\Models\Nature  $nature
      * @return \Illuminate\Http\Response
      */
-    public function show(Nature $nature)
+    public function show($id)
     {
-        //
+        $item = Nature::findOrFail($id);
+
+        return response()->json([
+            'status' => true,
+            'data' => $item,
+            'previous' => $item->previous ? route('natures.show', ['nature' => $item->previous]) : null,
+            'next' => $item->next ? route('natures.show', ['nature' => $item->next]) : null,
+        ], 200);
     }
 
     /**

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\AlphabetController;
 use App\Http\Controllers\Api\CategoryController;
+use App\Http\Controllers\Api\FruitController;
 use App\Http\Controllers\Api\NatureController;
 use App\Http\Controllers\Api\NumberController;
 use Illuminate\Http\Request;
@@ -32,6 +33,9 @@ Route::prefix('/v1')->group(function () {
     // Numbers
     Route::resource('/numbers', NumberController::class);
 
-    // Numbers
+    // Natures
     Route::resource('/natures', NatureController::class);
+
+    // Fruits
+    Route::resource('/fruits', FruitController::class);
 });
