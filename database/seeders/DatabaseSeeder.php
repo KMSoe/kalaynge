@@ -20,5 +20,6 @@ class DatabaseSeeder extends Seeder
          $this->call(AlphabetSeeder::class);
          $this->call(NumberSeeder::class);
          $this->call(NatureSeeder::class);
+         $this->call(FruitSeeder::class);
     }
 }
