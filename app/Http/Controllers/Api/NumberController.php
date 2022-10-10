@@ -158,12 +158,12 @@ class NumberController extends Controller
      */
     public function destroy($id)
     {
-        $number = Number::findOrFail($id);
+        // $number = Number::findOrFail($id);
 
-        $countDeleted = $number->delete();
+        // $countDeleted = $number->delete();
 
-        if ($countDeleted) {
-            return response()->json([], 204);
-        }
+        // if ($countDeleted) {
+        //     return response()->json([], 204);
+        // }
     }
 }

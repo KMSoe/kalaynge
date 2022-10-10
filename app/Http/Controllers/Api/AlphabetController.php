@@ -163,12 +163,12 @@ class AlphabetController extends Controller
      */
     public function destroy($id)
     {
-        $alphabet = Alphabet::findOrFail($id);
+        // $alphabet = Alphabet::findOrFail($id);
 
-        $countDeleted = $alphabet->delete();
+        // $countDeleted = $alphabet->delete();
 
-        if ($countDeleted) {
-            return response()->json([], 204);
-        }
+        // if ($countDeleted) {
+        //     return response()->json([], 204);
+        // }
     }
 }

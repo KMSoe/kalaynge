@@ -83,12 +83,12 @@ class NatureController extends Controller
      */
     public function destroy($id)
     {
-        $nature = Nature::findOrFail($id);
+        // $nature = Nature::findOrFail($id);
 
-        $countDeleted = $nature->delete();
+        // $countDeleted = $nature->delete();
 
-        if($countDeleted) {
-            return response()->json([], 204);
-        }
+        // if($countDeleted) {
+        //     return response()->json([], 204);
+        // }
     }
 }
