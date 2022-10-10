@@ -17,7 +17,7 @@ class Fruit extends Model
      */
     public function getNextAttribute()
     {
-        return static::where('id', '>', $this->id)->orderBy('sorting', 'asc')->value('id');
+        return static::where('id', '>', $this->id)->orderBy('id', 'asc')->value('id');
     }
 
     /**
@@ -27,7 +27,7 @@ class Fruit extends Model
      */
     public  function getPreviousAttribute()
     {
-        return static::where('id', '<', $this->id)->orderBy('sorting', 'desc')->value('id');
+        return static::where('id', '<', $this->id)->orderBy('id', 'desc')->value('id');
     }
 
     public function getPictureAttribute($picture)
