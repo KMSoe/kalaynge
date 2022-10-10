@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AlphabetController;
+use App\Http\Controllers\Api\AnimalController;
 use App\Http\Controllers\Api\CategoryController;
 use App\Http\Controllers\Api\FruitController;
 use App\Http\Controllers\Api\NatureController;
@@ -42,4 +43,7 @@ Route::prefix('/v1')->group(function () {
 
     // Vehicles
     Route::resource('/vehicles', VehicleController::class);
+
+    // Animals
+    Route::resource('/animals', AnimalController::class);
 });
