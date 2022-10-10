@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use Exception;
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
@@ -45,20 +46,25 @@ class Handler extends ExceptionHandler
 
         $this->renderable(function (Exception $e, Request $request) {
             if ($request->is('api/*')) {
-                if ($e instanceof AuthenticationException) {
+                if ($e instanceof NotFoundHttpException) {
+                    return response()->json([
+                        'status' => false,
+                        'message' => 'Not Found',
+                    ], 404);
+                } else if ($e instanceof AuthenticationException) {
                     return response()->json([
                         'status' => false,
                         'message' => 'Not Authenticated',
+                    ], 401);
+                }else if ($e instanceof AuthorizationException) {
+                    return response()->json([
+                        'status' => false,
+                        'message' => 'No Access',
                     ], 401);
                 } else if ($e instanceof ModelNotFoundException) {
                     return response()->json([
                         'status' => false,
                         'message' => 'Not Found',
-                    ], 404);
-                } else if ($e instanceof NotFoundHttpException) {
-                    return response()->json([
-                        'status' => false,
-                        'message' => 'Route Not Found',
                     ], 404);
                 }
                 // return response()->json([
