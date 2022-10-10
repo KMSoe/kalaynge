@@ -5,6 +5,7 @@ use App\Http\Controllers\Api\CategoryController;
 use App\Http\Controllers\Api\FruitController;
 use App\Http\Controllers\Api\NatureController;
 use App\Http\Controllers\Api\NumberController;
+use App\Http\Controllers\Api\VehicleController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -38,4 +39,7 @@ Route::prefix('/v1')->group(function () {
 
     // Fruits
     Route::resource('/fruits', FruitController::class);
+
+    // Vehicles
+    Route::resource('/vehicles', VehicleController::class);
 });
