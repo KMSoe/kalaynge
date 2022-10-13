@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\AlphabetController;
 use App\Http\Controllers\Api\AnimalController;
 use App\Http\Controllers\Api\CategoryController;
+use App\Http\Controllers\Api\ColorController;
 use App\Http\Controllers\Api\FruitController;
 use App\Http\Controllers\Api\HousewareController;
 use App\Http\Controllers\Api\NatureController;
@@ -50,4 +51,7 @@ Route::prefix('/v1')->group(function () {
 
     // Housewares
     Route::resource('/housewares', HousewareController::class);
+
+    // Colors
+    Route::resource('/colors', ColorController::class);
 });
