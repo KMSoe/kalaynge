@@ -24,6 +24,7 @@ class CreateColorsTable extends Migration
             $table->string('video')->nullable();
             $table->foreignId('category_id')->references('id')->on('categories');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

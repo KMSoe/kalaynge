@@ -39,6 +39,7 @@ class Color extends Model
 
     public function getPicturesAttribute($pictures)
     {
+        $pictures = json_decode($pictures);
         $result = array();
 
         foreach ($pictures as $item) {
