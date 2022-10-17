@@ -15,9 +15,14 @@ class VehicleController extends Controller
      */
     public function index()
     {
-        $vehicles = Vehicle::select('name', 'picture')->paginate(3);
+        $vehicles = Vehicle::orderBy('id')
+            ->get();
 
-        return $vehicles;
+        return response()->json([
+            'status' => true,
+            'count' => count($vehicles),
+            'data' => $vehicles
+        ], 200);
     }
 
     /**

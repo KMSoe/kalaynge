@@ -15,9 +15,14 @@ class NatureController extends Controller
      */
     public function index()
     {
-        $data = Nature::paginate(3);
+        $natures = Nature::orderBy('id')
+            ->get();
 
-        return $data;
+        return response()->json([
+            'status' => true,
+            'count' => count($natures),
+            'data' => $natures
+        ], 200);
     }
 
     /**

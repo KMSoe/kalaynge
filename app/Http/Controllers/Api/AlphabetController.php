@@ -18,12 +18,14 @@ class AlphabetController extends Controller
      */
     public function index()
     {
-        $alphabets = Alphabet::select('id', 'name', 'sorting', 'created_at')
-            ->orderBy('sorting')
-            ->orderBy('created_at')
-            ->paginate(10);
+        $alphabets = Alphabet::orderBy('sorting')
+            ->get();
 
-        return $alphabets;
+        return response()->json([
+            'status' => true,
+            'count' => count($alphabets),
+            'data' => $alphabets
+        ], 200);
     }
 
     /**
