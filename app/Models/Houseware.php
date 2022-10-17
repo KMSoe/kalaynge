@@ -10,6 +10,8 @@ class Houseware extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected $hidden = ['created_at', 'updated_at', 'deleted_at'];
+
     /**
      * Write code on Method
      *

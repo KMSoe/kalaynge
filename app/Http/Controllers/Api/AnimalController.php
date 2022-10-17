@@ -15,9 +15,14 @@ class AnimalController extends Controller
      */
     public function index()
     {
-        $animals = Animal::select('name', 'picture')->paginate(3);
+        $animals = Animal::orderBy('created_at')
+            ->get();
 
-        return $animals;
+        return response()->json([
+            'status' => true,
+            'count' => count($animals),
+            'data' => $animals
+        ], 200);
     }
 
     /**

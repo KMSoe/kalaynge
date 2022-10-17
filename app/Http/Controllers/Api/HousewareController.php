@@ -15,9 +15,14 @@ class HousewareController extends Controller
      */
     public function index()
     {
-        $housewares = Houseware::select('name', 'picture')->paginate(3);
+        $housewares = Houseware::orderBy('id')
+            ->get();
 
-        return $housewares;
+        return response()->json([
+            'status' => true,
+            'count' => count($housewares),
+            'data' => $housewares
+        ], 200);
     }
 
     /**

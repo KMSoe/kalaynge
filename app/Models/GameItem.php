@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Vehicle extends Model
+class GameItem extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $hidden = ['created_at', 'updated_at', 'deleted_at'];
+    protected $hidden = ['correct_answer', 'created_at', 'updated_at', 'deleted_at'];
 
     /**
      * Write code on Method
@@ -19,7 +19,7 @@ class Vehicle extends Model
      */
     public function getNextAttribute()
     {
-        return static::where('id', '>', $this->id)->orderBy('id', 'asc')->value('id');
+        return static::where('id', '>', $this->id)->where('', '>', $this->id)->orderBy('id', 'asc')->value('id');
     }
 
     /**
@@ -30,10 +30,5 @@ class Vehicle extends Model
     public  function getPreviousAttribute()
     {
         return static::where('id', '<', $this->id)->orderBy('id', 'desc')->value('id');
-    }
-
-    public function getPictureAttribute($picture)
-    {
-        return asset('storage/vehicles/pictures/' . $picture);
     }
 }

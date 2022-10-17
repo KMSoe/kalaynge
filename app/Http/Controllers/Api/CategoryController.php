@@ -16,9 +16,14 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $categories = Category::paginate(3);
+        $categories = Category::orderBy('id')
+            ->get();
 
-        return $categories;
+        return response()->json([
+            'status' => true,
+            'count' => count($categories),
+            'data' => $categories
+        ], 200);
     }
 
     /**
