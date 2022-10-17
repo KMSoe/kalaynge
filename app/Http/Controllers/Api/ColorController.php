@@ -15,9 +15,14 @@ class ColorController extends Controller
      */
     public function index()
     {
-        $colors = Color::select('id', 'name', 'color_code', 'symbol_picture')->paginate(3);
+        $colors = Color::orderBy('id')
+            ->get();
 
-        return $colors;
+        return response()->json([
+            'status' => true,
+            'count' => count($colors),
+            'data' => $colors
+        ], 200);
     }
 
     /**

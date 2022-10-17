@@ -14,6 +14,7 @@ class Color extends Model
         'pictures' => 'array'
     ];
 
+    protected $hidden = ['created_at', 'updated_at', 'deleted_at'];
      /**
      * Write code on Method
      *

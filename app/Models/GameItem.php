@@ -10,7 +10,7 @@ class GameItem extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $hidden = ['correct_answer'];
+    protected $hidden = ['correct_answer', 'created_at', 'updated_at', 'deleted_at'];
 
     /**
      * Write code on Method

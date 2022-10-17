@@ -18,12 +18,14 @@ class NumberController extends Controller
      */
     public function index()
     {
-        $numbers = Number::select('name', 'sorting', 'created_at')
-            ->orderBy('sorting')
-            ->orderBy('created_at')
-            ->paginate(10);
+        $numbers = Number::orderBy('sorting')
+            ->get();
 
-        return $numbers;
+        return response()->json([
+            'status' => true,
+            'count' => count($numbers),
+            'data' => $numbers
+        ], 200);
     }
 
     /**

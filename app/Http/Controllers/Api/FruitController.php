@@ -15,9 +15,14 @@ class FruitController extends Controller
      */
     public function index()
     {
-        $fruits = Fruit::select('name', 'picture')->paginate(3);
+        $fruits = Fruit::orderBy('id')
+            ->get();
 
-        return $fruits;
+        return response()->json([
+            'status' => true,
+            'count' => count($fruits),
+            'data' => $fruits
+        ], 200);
     }
 
     /**
