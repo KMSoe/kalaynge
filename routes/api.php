@@ -8,6 +8,7 @@ use App\Http\Controllers\Api\FruitController;
 use App\Http\Controllers\Api\HousewareController;
 use App\Http\Controllers\Api\NatureController;
 use App\Http\Controllers\Api\NumberController;
+use App\Http\Controllers\Api\ShapeController;
 use App\Http\Controllers\Api\VehicleController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -54,4 +55,7 @@ Route::prefix('/v1')->group(function () {
 
     // Colors
     Route::resource('/colors', ColorController::class);
+
+    // Shapes
+    Route::resource('/shapes', ShapeController::class);
 });

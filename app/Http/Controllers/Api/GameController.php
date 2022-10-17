@@ -15,9 +15,7 @@ class GameController extends Controller
      */
     public function index()
     {
-        $fruits = Fruit::select('name', 'picture')->paginate(3);
-
-        return $fruits;
+        
     }
 
     /**
