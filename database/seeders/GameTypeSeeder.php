@@ -16,7 +16,39 @@ class GameTypeSeeder extends Seeder
     {
         $resources = [
             [
-                "name" => "",
+                "name" => "ကခဂ အက္ခရာများ",
+                "picture" => "",
+                "audio" => "",
+                "video" => "",
+                "description" => "",
+                "category_id" => 8,
+            ],
+            [
+                "name" => "ကခဂ အက္ခရာများ",
+                "picture" => "",
+                "audio" => "",
+                "video" => "",
+                "description" => "",
+                "category_id" => 8,
+            ],
+            [
+                "name" => "ကခဂ အက္ခရာများ",
+                "picture" => "",
+                "audio" => "",
+                "video" => "",
+                "description" => "",
+                "category_id" => 8,
+            ],
+            [
+                "name" => "ကခဂ အက္ခရာများ",
+                "picture" => "",
+                "audio" => "",
+                "video" => "",
+                "description" => "",
+                "category_id" => 8,
+            ],
+            [
+                "name" => "ကခဂ အက္ခရာများ",
                 "picture" => "",
                 "audio" => "",
                 "video" => "",
