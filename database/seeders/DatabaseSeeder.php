@@ -26,5 +26,6 @@ class DatabaseSeeder extends Seeder
          $this->call(HousewareSeeder::class);
          $this->call(ColorSeeder::class);
          $this->call(GameTypeSeeder::class);
+         $this->call(ShapeSeeder::class);
     }
 }

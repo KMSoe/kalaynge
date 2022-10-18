@@ -21,7 +21,7 @@ class CategoryController extends Controller
 
         return response()->json([
             'status' => true,
-            'count' => count($categories),
+            'total' => count($categories),
             'data' => $categories
         ], 200);
     }

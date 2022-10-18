@@ -20,7 +20,7 @@ class VehicleController extends Controller
 
         return response()->json([
             'status' => true,
-            'count' => count($vehicles),
+            'total' => count($vehicles),
             'data' => $vehicles
         ], 200);
     }
