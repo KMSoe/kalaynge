@@ -20,7 +20,7 @@ class ColorController extends Controller
 
         return response()->json([
             'status' => true,
-            'count' => count($colors),
+            'total' => count($colors),
             'data' => $colors
         ], 200);
     }

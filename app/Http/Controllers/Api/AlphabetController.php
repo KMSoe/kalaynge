@@ -23,7 +23,7 @@ class AlphabetController extends Controller
 
         return response()->json([
             'status' => true,
-            'count' => count($alphabets),
+            'total' => count($alphabets),
             'data' => $alphabets
         ], 200);
     }
