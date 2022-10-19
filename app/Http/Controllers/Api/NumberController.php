@@ -23,7 +23,7 @@ class NumberController extends Controller
 
         return response()->json([
             'status' => true,
-            'count' => count($numbers),
+            'total' => count($numbers),
             'data' => $numbers
         ], 200);
     }

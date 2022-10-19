@@ -20,7 +20,7 @@ class FruitController extends Controller
 
         return response()->json([
             'status' => true,
-            'count' => count($fruits),
+            'total' => count($fruits),
             'data' => $fruits
         ], 200);
     }

@@ -20,7 +20,7 @@ class ShapeController extends Controller
 
         return response()->json([
             'status' => true,
-            'count' => count($shapes),
+            'total' => count($shapes),
             'data' => $shapes
         ], 200);
     }

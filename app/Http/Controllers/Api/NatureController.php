@@ -20,7 +20,7 @@ class NatureController extends Controller
 
         return response()->json([
             'status' => true,
-            'count' => count($natures),
+            'total' => count($natures),
             'data' => $natures
         ], 200);
     }
