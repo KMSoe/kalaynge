@@ -20,7 +20,7 @@ class AnimalController extends Controller
 
         return response()->json([
             'status' => true,
-            'count' => count($animals),
+            'total' => count($animals),
             'data' => $animals
         ], 200);
     }
