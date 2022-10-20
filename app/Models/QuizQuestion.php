@@ -10,6 +10,11 @@ class QuizQuestion extends Model
 {
     use HasFactory, SoftDeletes;
 
+    public function getPictureAttribute($picture)
+    {
+        return asset('storage/alphabets/pictures/' . $picture);
+    }
+
     public function answers()
     {
         return $this->hasMany(QuizAnswer::class);
