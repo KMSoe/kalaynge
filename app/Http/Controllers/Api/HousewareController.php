@@ -20,7 +20,7 @@ class HousewareController extends Controller
 
         return response()->json([
             'status' => true,
-            'count' => count($housewares),
+            'total' => count($housewares),
             'data' => $housewares
         ], 200);
     }
