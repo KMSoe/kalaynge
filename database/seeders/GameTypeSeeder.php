@@ -48,14 +48,6 @@ class GameTypeSeeder extends Seeder
                 "category_id" => 6,
             ],
             [
-                "name" => "အရာဝတ္ထုများ",
-                "picture" => "",
-                "audio" => "",
-                "video" => "",
-                "description" => "",
-                "category_id" => 6,
-            ],
-            [
                 "name" => "သဘာဝ ပတ်ဝန်းကျင်",
                 "picture" => "",
                 "audio" => "",

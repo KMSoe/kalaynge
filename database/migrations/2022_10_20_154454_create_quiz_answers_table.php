@@ -20,7 +20,7 @@ class CreateQuizAnswersTable extends Migration
             $table->text('description')->nullable();
             $table->string('audio')->nullable();
             $table->string('video')->nullable();
-            $table->foreignId('question_id')->references('id')->on('quiz_questions');
+            $table->foreignId('quiz_question_id')->references('id')->on('quiz_questions');
             $table->timestamps();
             $table->softDeletes();
         });

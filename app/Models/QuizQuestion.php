@@ -12,7 +12,11 @@ class QuizQuestion extends Model
 
     public function getPictureAttribute($picture)
     {
-        return asset('storage/alphabets/pictures/' . $picture);
+        if ($picture) {
+            return asset('storage/alphabets/pictures/' . $picture);
+        } else {
+            return null;
+        }
     }
 
     public function answers()
