@@ -218,7 +218,7 @@ class AlphabetSeeder extends Seeder
                 "symbol" => "ဗ",
                 "name" => "ဗထက်ခြိုက်",
                 "sample_word" => "ဗလကြီး",
-                "picture" => "a.png",
+                "picture" => "balagyi.png",
                 "sorting" => 23,
                 "description" => "",
                 "category_id" => 1,
