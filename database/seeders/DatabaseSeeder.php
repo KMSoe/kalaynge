@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\QuizQuestion;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -27,5 +28,8 @@ class DatabaseSeeder extends Seeder
          $this->call(ColorSeeder::class);
          $this->call(GameTypeSeeder::class);
          $this->call(ShapeSeeder::class);
+         $this->call(GameTypeSeeder::class);
+         $this->call(QuizQuestionSeeder::class);
+         $this->call(AlphabetQuizAnswerSeeder::class);
     }
 }

@@ -8,6 +8,7 @@ use App\Http\Controllers\Api\FruitController;
 use App\Http\Controllers\Api\HousewareController;
 use App\Http\Controllers\Api\NatureController;
 use App\Http\Controllers\Api\NumberController;
+use App\Http\Controllers\Api\QuizController;
 use App\Http\Controllers\Api\ShapeController;
 use App\Http\Controllers\Api\VehicleController;
 use Illuminate\Http\Request;
@@ -58,4 +59,10 @@ Route::prefix('/v1')->group(function () {
 
     // Shapes
     Route::resource('/shapes', ShapeController::class);
+
+    // ပျော်ရွှင်ဖွယ်ရာ ဂိမ်းကမ္ဘာ
+    Route::resource('quizzes', QuizController::class);
+
+    // Answer Question
+    Route::post('quizzes/{id}/answer', [QuizController::class, 'checkAnswer']);
 });
