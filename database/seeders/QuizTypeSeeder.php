@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\GameType;
+use App\Models\QuizType;
 use Illuminate\Database\Seeder;
 
-class GameTypeSeeder extends Seeder
+class QuizTypeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -90,7 +90,7 @@ class GameTypeSeeder extends Seeder
         ];
 
         foreach ($resources as $item) {
-            GameType::create($item);
+            QuizType::create($item);
         }
     }
 }

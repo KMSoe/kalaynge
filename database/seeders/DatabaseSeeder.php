@@ -26,10 +26,10 @@ class DatabaseSeeder extends Seeder
          $this->call(AnimalSeeder::class);
          $this->call(HousewareSeeder::class);
          $this->call(ColorSeeder::class);
-         $this->call(GameTypeSeeder::class);
          $this->call(ShapeSeeder::class);
-         $this->call(GameTypeSeeder::class);
+         $this->call(QuizTypeSeeder::class);
          $this->call(QuizQuestionSeeder::class);
          $this->call(AlphabetQuizAnswerSeeder::class);
+         $this->call(AlpabetQuizMappingSeeder::class);
     }
 }
