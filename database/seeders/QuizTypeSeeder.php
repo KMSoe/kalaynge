@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\GameType;
+use App\Models\QuizType;
 use Illuminate\Database\Seeder;
 
 class GameTypeSeeder extends Seeder
@@ -41,14 +41,6 @@ class GameTypeSeeder extends Seeder
             ],
             [
                 "name" => "အရောင်များ",
-                "picture" => "",
-                "audio" => "",
-                "video" => "",
-                "description" => "",
-                "category_id" => 6,
-            ],
-            [
-                "name" => "အရာဝတ္ထုများ",
                 "picture" => "",
                 "audio" => "",
                 "video" => "",
@@ -98,7 +90,7 @@ class GameTypeSeeder extends Seeder
         ];
 
         foreach ($resources as $item) {
-            GameType::create($item);
+            QuizType::create($item);
         }
     }
 }
