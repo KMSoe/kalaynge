@@ -10,5 +10,7 @@ class QuizType extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected $table = 'quiz_types';
+
     protected $hidden = ['created_at', 'updated_at', 'deleted_at'];
 }

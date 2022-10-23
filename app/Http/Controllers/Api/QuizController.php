@@ -13,7 +13,7 @@ class QuizController extends Controller
     public function index()
     {
         $data = QuizQuestion::with('answers')
-            ->orderBy('game_type', 'ASC')
+            ->orderBy('quiz_type', 'ASC')
             ->orderBy('id', 'ASC')
             ->get();
 

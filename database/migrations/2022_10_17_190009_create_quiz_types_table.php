@@ -33,6 +33,6 @@ class CreateQuizTypesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('game_types');
+        Schema::dropIfExists('quiz_types');
     }
 }

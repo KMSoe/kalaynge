@@ -22,7 +22,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -31,7 +31,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -40,7 +40,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -49,7 +49,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -58,7 +58,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -67,7 +67,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -76,7 +76,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -85,7 +85,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -94,7 +94,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -103,7 +103,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -112,7 +112,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -121,7 +121,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -130,7 +130,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -139,7 +139,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -148,7 +148,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -157,7 +157,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -166,7 +166,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -175,7 +175,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -184,7 +184,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -193,7 +193,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -202,7 +202,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -211,7 +211,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -220,7 +220,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -229,7 +229,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -238,7 +238,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -247,7 +247,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -256,7 +256,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -265,7 +265,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -274,7 +274,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -283,7 +283,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -292,7 +292,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -301,7 +301,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ],
             [
@@ -310,7 +310,7 @@ class QuizQuestionSeeder extends Seeder
                 "description" => "",
                 "audio" => "",
                 "video" => "",
-                "game_type" => 1,
+                "quiz_type" => 1,
                 "category_id" => 6
             ]
         ];

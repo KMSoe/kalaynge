@@ -10,6 +10,8 @@ class QuizQuestion extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected $table = 'quiz_questions';
+
     public function getPictureAttribute($picture)
     {
         if ($picture) {

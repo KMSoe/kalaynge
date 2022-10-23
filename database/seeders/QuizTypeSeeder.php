@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use App\Models\QuizType;
 use Illuminate\Database\Seeder;
 
-class GameTypeSeeder extends Seeder
+class QuizTypeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
