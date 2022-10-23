@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateGameItemsTable extends Migration
+class CreateQuizTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,13 @@ class CreateGameItemsTable extends Migration
      */
     public function up()
     {
-        Schema::create('game_items', function (Blueprint $table) {
+        Schema::create('quiz_types', function (Blueprint $table) {
             $table->id();
-            $table->string('question');
-            $table->json('answers');
-            $table->integer('correct_answer');
-            $table->text('description')->nullable();
+            $table->string('name');
+            $table->string('picture')->nullable();
+            $table->string('description')->nullable();
             $table->string('audio')->nullable();
             $table->string('video')->nullable();
-            $table->foreignId('game_type')->references('id')->on('game_types');
             $table->foreignId('category_id')->references('id')->on('categories');
             $table->timestamps();
             $table->softDeletes();
@@ -35,6 +33,6 @@ class CreateGameItemsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('game_items');
+        Schema::dropIfExists('game_types');
     }
 }
