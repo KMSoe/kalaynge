@@ -61,6 +61,7 @@ Route::prefix('/v1')->group(function () {
     Route::resource('/shapes', ShapeController::class);
 
     // ပျော်ရွှင်ဖွယ်ရာ ဂိမ်းကမ္ဘာ
+    Route::get('quiz-types', [QuizController::class, 'getQuizTypes']);
     Route::resource('quizzes', QuizController::class);
 
     // Answer Question

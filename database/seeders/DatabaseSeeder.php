@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
          $this->call(ColorSeeder::class);
          $this->call(ShapeSeeder::class);
          $this->call(QuizTypeSeeder::class);
-         $this->call(QuizQuestionSeeder::class);
+         $this->call(AlphabetQuizQuestionSeeder::class);
          $this->call(AlphabetQuizAnswerSeeder::class);
          $this->call(AlpabetQuizMappingSeeder::class);
     }
