@@ -10,12 +10,23 @@ use Illuminate\Support\Facades\Validator;
 
 class QuizController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $data = QuizQuestion::with('answers')
-            ->orderBy('quiz_type', 'ASC')
-            ->orderBy('id', 'ASC')
-            ->get();
+        $type = $request->type;
+
+        $data = collect();
+
+        if ($type) {
+            $data = QuizQuestion::with('answers')
+                ->where('quiz_type', $type)
+                ->orderBy('id', 'ASC')
+                ->get();
+        } else {
+            $data = QuizQuestion::with('answers')
+                ->orderBy('quiz_type', 'ASC')
+                ->orderBy('id', 'ASC')
+                ->get();
+        }
 
         return response()->json([
             'status' => true,
@@ -30,7 +41,7 @@ class QuizController extends Controller
             'answer_id' => 'required'
         ]);
 
-        if($valaditor->fails()) {
+        if ($valaditor->fails()) {
             return response()->json([
                 'status' => false,
                 'message' => 'Please select one!'
@@ -42,14 +53,14 @@ class QuizController extends Controller
         $quiz_mapping = QuizQuestionAnswer::where('quiz_question_id', $id)
             ->first();
 
-        if(!$quiz_mapping) {
+        if (!$quiz_mapping) {
             return response()->json([
                 'status' => false,
                 'message' => 'Not Found!'
             ], 404);
         }
 
-        if($quiz_mapping->quiz_answer_id == $answer_id) {
+        if ($quiz_mapping->quiz_answer_id == $answer_id) {
             return response()->json([
                 'status' => true,
                 'message' => 'Great Job!'
