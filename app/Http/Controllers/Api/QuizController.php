@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\QuizQuestion;
 use App\Models\QuizQuestionAnswer;
+use App\Models\QuizType;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -27,6 +28,17 @@ class QuizController extends Controller
                 ->orderBy('id', 'ASC')
                 ->get();
         }
+
+        return response()->json([
+            'status' => true,
+            'total' => count($data),
+            'data' => $data
+        ], 200);
+    }
+
+    public function getQuizTypes()
+    {
+        $data = QuizType::all();
 
         return response()->json([
             'status' => true,
