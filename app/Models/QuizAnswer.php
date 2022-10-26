@@ -10,6 +10,8 @@ class QuizAnswer extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected $hidden = ['created_at', 'updated_at', 'deleted_at'];
+
     public function question()
     {
         return $this->belongsTo(QuizQuestion::class);
