@@ -16,4 +16,13 @@ class QuizAnswer extends Model
     {
         return $this->belongsTo(QuizQuestion::class);
     }
+
+    public function getPictureAttribute($picture)
+    {
+        if ($picture) {
+            return asset('storage/quizzes/pictures/answers/' . $picture);
+        } else {
+            return null;
+        }
+    }
 }
