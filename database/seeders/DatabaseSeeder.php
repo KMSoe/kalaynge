@@ -40,6 +40,8 @@ class DatabaseSeeder extends Seeder
           // Color Quiz Seeders
          $this->call(ColorQuizQuestionSeeder::class);
          $this->call(ColorQuizAnswerSeeder::class);
+         $this->call(ColorQuizMappingSeeder::class);
+
 
     }
 }

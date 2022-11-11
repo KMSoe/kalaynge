@@ -5321,7 +5321,11 @@ __webpack_require__.r(__webpack_exports__);
 function App() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
-      children: "Hello React"
+      style: {
+        textAlign: "center",
+        top: "50%"
+      },
+      children: "\u1000 \u1000\u101C\u1031\u1038\u1004\u101A\u103A"
     })
   });
 }
