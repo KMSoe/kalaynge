@@ -1,10 +1,17 @@
 import React from 'react';
 import { Route } from "react-router-dom";
+import WelcomeImg from './assets/images/welcome.png'
 
 function App() {
+    const bgStyles = {
+        backgroundImage: "url(/images/welcome.png)",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+    }
     return (
-        <div>
-            <h1 style={{textAlign: "center", top: "50%"}}>က ကလေးငယ်</h1>
+        <div style={{ ...bgStyles, width: "100vw", height: "100vh" }}>
+
         </div>
     );
 }
