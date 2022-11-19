@@ -1,4 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
+#root {
+    background-image: "url(/images/welcome.png)";
+    background-repeat: "no-repeat";
+    background-position: "center";
+    background-size: "cover";
+    width: 100vw;
+    height: 100vh;
+}
 @charset "UTF-8"; /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
