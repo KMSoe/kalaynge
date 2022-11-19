@@ -19,7 +19,7 @@ function App() {
         <div style={{ ...bgStyles, width: "100vw", height: "100vh" }}>
             <div className="position-absolute top-50 start-50 translate-middle text-center" >
                 <img src={Kalaynge} alt="Kalaynge Logo" className="mb-5" style={{ width: "300px" }} />
-                <div className="tex-center mx-auto" style={{ width: "380px", }}>
+                <div className="tex-center mx-auto" style={{ width: "400px", }}>
                     <h3 className="text-white font-bold pb-8 lg:pb-6 text-center mb-5">
                         Download App:
                     </h3>
