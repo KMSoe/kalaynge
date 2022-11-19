@@ -5346,6 +5346,7 @@ function App() {
       className: "position-absolute top-50 start-50 translate-middle text-center",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
         src: _images_kalaynge_svg__WEBPACK_IMPORTED_MODULE_3__["default"],
+        alt: "Kalaynge Logo",
         className: "mb-5",
         style: {
           width: "300px"
