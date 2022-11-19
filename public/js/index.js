@@ -5354,7 +5354,7 @@ function App() {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
         className: "tex-center mx-auto",
         style: {
-          width: "420px"
+          width: "380px"
         },
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h3", {
           className: "text-white font-bold pb-8 lg:pb-6 text-center mb-5",
