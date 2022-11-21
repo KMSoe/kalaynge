@@ -5314,9 +5314,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _images_app_store_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../../images/app_store.svg */ "./public/images/app_store.svg");
-/* harmony import */ var _images_play_store_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../images/play_store.svg */ "./public/images/play_store.svg");
-/* harmony import */ var _images_kalaynge_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../images/kalaynge.svg */ "./public/images/kalaynge.svg");
+/* harmony import */ var _images_app_store_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../images/app_store.svg */ "./public/images/app_store.svg");
+/* harmony import */ var _images_play_store_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../images/play_store.svg */ "./public/images/play_store.svg");
+/* harmony import */ var _images_kalaynge_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../images/kalaynge.svg */ "./public/images/kalaynge.svg");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -5335,7 +5335,7 @@ function App() {
     backgroundSize: "cover"
   };
   var downloadStyle = {
-    width: "180px"
+    width: "40%"
   };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     style: _objectSpread(_objectSpread({}, bgStyles), {}, {

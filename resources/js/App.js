@@ -12,7 +12,7 @@ function App() {
     };
 
     const downloadStyle = {
-        width: "180px"
+        width: "40%"
     }
 
     return (
